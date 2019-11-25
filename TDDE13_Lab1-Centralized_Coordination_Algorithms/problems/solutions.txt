@@ -1,0 +1,13 @@
+These are the "greedily" achieved solutions for the different problem sets:
+
+scsga-15-10-npd-1.prob: 8.98147
+scsga-15-10-npd-2.prob: 8.83272
+
+scsga-15-30-npd-1.prob: 23.0142
+scsga-15-30-npd-2.prob: 24.1854
+
+csg-15-npd-1.prob: 7.8364
+csg-15-npd-2.prob: 10.0136
+
+csg-20-npd-1.prob: 12.1601
+csg-20-npd-2.prob: 11.7127
