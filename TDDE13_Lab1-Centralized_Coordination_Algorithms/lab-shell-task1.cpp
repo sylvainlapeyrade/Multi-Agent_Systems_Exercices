@@ -90,26 +90,26 @@ coalition_structure csg::greedy_CSG(
 		CS_best = CS;
 		CS_best.push_back(coalition{i});
 
-		if (CS.size() > 0)
+		// if (CS.size() > 0)
+		// {
+		for (auto &C : CS)
 		{
 			coalition_structure CS2 = CS;
-			for (auto &C : CS)
+			// for (int it = 1; it < (int)CS2.size(); it++)
+			// {
+			// 	if (CS2[it] == C)
+			// 	{
+			// 		CS2[it].clear();
+			// 	}
+			// }
+			C.push_back(i);
+			// CS2.push_back(C);
+			if (evaluate_coalition_structure(CS2, v) > evaluate_coalition_structure(CS_best, v))
 			{
-				for (int it = 1; it < (int)CS2.size(); it++)
-				{
-					if (CS2[it] == C)
-					{
-						CS2[it].clear();
-					}
-				}
-				C.push_back(i);
-				CS2.push_back(C);
-				if (evaluate_coalition_structure(CS2, v) > evaluate_coalition_structure(CS_best, v))
-				{
-					CS_best = CS2;
-				}
+				CS_best = CS2;
 			}
 		}
+		// }
 		CS = CS_best;
 	}
 
