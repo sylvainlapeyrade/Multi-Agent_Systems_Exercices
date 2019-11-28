@@ -20,12 +20,9 @@ float scsga::evaluate_ordered_coalition_structure(
 	float s = 0;
 
 	// Implement here by using evaluate_coalition_assignment ...
-	for (auto const &coalition : S)
+	for (int i = 1; i < (int)S.size(); i++)
 	{
-		for (auto const &task : T)
-		{
-			s += evaluate_coalition_assignment(coalition, task, v);
-		}
+		s += evaluate_coalition_assignment(S[i], T[i], v);
 	}
 
 	return s;
@@ -50,14 +47,13 @@ ordered_coalition_structure scsga::random_search_SCSGA(
 	// Implement here ...
 	srand(time(NULL));
 
-	for (int i = 1; i < k; i++)
+	for (int j = 1; j < k; j++)
 	{
-		ordered_coalition_structure CS = CS_best;
+		ordered_coalition_structure CS(T.size(), coalition());
 		for (auto const &i : N)
 		{
-			int j = rand() % CS.size();
-			coalition C = CS[j-1];
-			C.push_back(i);
+			int random_element = rand() % CS.size();
+			CS[random_element].push_back(i);
 		}
 		if (CS_best == CS_best_init || evaluate_ordered_coalition_structure(CS, T, v) >
 										   evaluate_ordered_coalition_structure(CS_best, T, v))
@@ -85,7 +81,8 @@ coalition_structure scsga::greedy_SCSGA(
 	for (auto const &i : N)
 	{
 		ordered_coalition_structure CS_best = CS;
-		for (int j = 1; j < (int)T.size(); j++)
+
+		for (int j = 1; j < (int)T.size() - 1; j++)
 		{
 			ordered_coalition_structure CS2 = CS;
 			CS2[j - 1].push_back(i);
@@ -95,6 +92,7 @@ coalition_structure scsga::greedy_SCSGA(
 				CS_best = CS2;
 			}
 		}
+		CS = CS_best;
 	}
 
 	return CS;
