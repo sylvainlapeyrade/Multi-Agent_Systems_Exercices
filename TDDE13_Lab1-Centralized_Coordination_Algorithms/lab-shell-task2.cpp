@@ -20,7 +20,7 @@ float scsga::evaluate_ordered_coalition_structure(
 	float s = 0;
 
 	// Implement here by using evaluate_coalition_assignment ...
-	for (int i = 1; i < (int)S.size(); i++)
+	for (int i = 0; i < (int)S.size(); i++)
 	{
 		s += evaluate_coalition_assignment(S[i], T[i], v);
 	}
@@ -82,10 +82,10 @@ coalition_structure scsga::greedy_SCSGA(
 	{
 		ordered_coalition_structure CS_best = CS;
 
-		for (int j = 1; j < (int)T.size() - 1; j++)
+		for (int j = 0; j < (int)T.size(); j++)
 		{
 			ordered_coalition_structure CS2 = CS;
-			CS2[j - 1].push_back(i);
+			CS2[j].push_back(i);
 			if (CS_best == CS || evaluate_ordered_coalition_structure(CS2, T, v) >
 									 evaluate_ordered_coalition_structure(CS_best, T, v))
 			{
