@@ -1,7 +1,7 @@
 PWD c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report
 INPUT C:\Users\sylva\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDD13-Lab_Report_1-Lapeyrade_Bourakkadi.tex
-OUTPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDD13-Lab_Report_1-Lapeyrade_Bourakkadi.log
+INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDE13-Lab_Report_1-Lapeyrade_Bourakkadi.tex
+OUTPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDE13-Lab_Report_1-Lapeyrade_Bourakkadi.log
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
@@ -30,9 +30,9 @@ INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\gr
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
-INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDD13-Lab_Report_1-Lapeyrade_Bourakkadi.aux
-INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDD13-Lab_Report_1-Lapeyrade_Bourakkadi.aux
-OUTPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDD13-Lab_Report_1-Lapeyrade_Bourakkadi.aux
+INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDE13-Lab_Report_1-Lapeyrade_Bourakkadi.aux
+INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDE13-Lab_Report_1-Lapeyrade_Bourakkadi.aux
+OUTPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDE13-Lab_Report_1-Lapeyrade_Bourakkadi.aux
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
@@ -72,7 +72,7 @@ INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti1
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
 INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\csg_data.png
 INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\csg_data.png
-OUTPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDD13-Lab_Report_1-Lapeyrade_Bourakkadi.pdf
+OUTPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDE13-Lab_Report_1-Lapeyrade_Bourakkadi.pdf
 INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\csg_data.png
 INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\csg_data.png
 INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\csg_data.png
@@ -92,7 +92,7 @@ INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE1
 INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\scsga_graph.png
 INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\scsga_graph.png
 INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\scsga_graph.png
-INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDD13-Lab_Report_1-Lapeyrade_Bourakkadi.aux
+INPUT c:\Users\sylva\Dropbox\erasmus\course\ht2_tdde13-multi_agent_systems\TDDE13_Multi_Agent_Systems_Labs\TDDE13_Lab1-Centralized_Coordination_Algorithms\report\TDDE13-Lab_Report_1-Lapeyrade_Bourakkadi.aux
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\sylva\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
