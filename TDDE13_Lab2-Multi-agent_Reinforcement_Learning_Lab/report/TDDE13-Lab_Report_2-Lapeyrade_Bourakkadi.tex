@@ -1,0 +1,99 @@
+\documentclass[10pt]{article}
+\usepackage{geometry, graphicx}
+\geometry{letterpaper}                 
+
+\title {Lab Report 2 Submission (2019)}
+\author{Sylvain Lapeyrade, Reda Bourakkadi\, (sylla801, redbo196)}
+\begin{document}
+\maketitle
+
+\section*{Answers}
+
+\subsection*{1) \textbf{ Exercise 1: Trade-off Between Exploration and Exploitation}}
+
+\textit{Evaluate the effects of $\alpha$, $\gamma$ and $\epsilon$, and plot your
+ accumulated reward for your best set of values. To get a good result you will need 
+ to update $\epsilon$ from a large to a small value during training. Study the values 
+ of the Q table for your best solution. What are the major difficulties for learning
+ in this environment?} \medskip
+ 
+ By trying different values for $\alpha$, $\gamma$ and $\epsilon$, we found the best
+ results with a value of 0.9 for each. As suggested, with have decreased $\epsilon$ from
+ the initial 0.9 by 0.001 after each episode, until 0. \medskip
+ 
+ While we manage to have total reward of more than 0.5 constantly as instructed,
+  our accumulated reward for our best set of value is 0.6661 and the corresponding
+  best values are as in Table \ref{table:1}:
+
+\begin{table}[ht!]
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+      \hline
+          0 & 3 & 3 & 3 & 0 & 0 & 2 & 0 & 3 & 1 & 0 & 0 & 0 & 2 & 1 & 0 \\
+      \hline
+    \end{tabular}
+    \caption{Best values of the Q-tables of our best cumulated reward.}
+    \label{table:1}
+  \end{center}
+\end{table}
+
+They are corresponding to the best action as evaluated by the algorithm. \textit{Left}
+ is designated by 0, \textit{Down} by 1, \textit{Right} by 2 and \textit{Up} by 3. The
+ Q-Table values are on in Figure \ref{table:1}. Indeed, since we took the \underline
+ {epsilon greedy} approach, where we randomly generate value between 0 and 1 and then
+ we see if they are smaller than $/epsilon$. If so, a random action between the four
+ mentioned earlier is chosen. Otherwise, we choose the action with the maximum value
+ in the Q-table.
+ 
+ \medskip
+ 
+ The major difficulties for learning in this environment is to find adequate values for
+ $\alpha$, $\gamma$ and $\epsilon$ and also figure out how much to decrease $\epsilon$ on
+ each episode. This is very important, because it determined how long we want to 
+ \textbf{explore} (i.e. randomly select actions to try new possibilities) which correspond
+ to a big $\epsilon$ value, and how long to \textbf{exploit} (i.e. take the best action
+ already found to pursue the best set of actions) which is a small $\epsilon$ value.
+ 
+\medskip
+\medskip
+\medskip
+\medskip
+\medskip
+\medskip
+
+\begin{table}[ht!]
+  \begin{center}
+    \begin{tabular}{| c  c  c  c |}
+      \hline
+      Left & Down & Right & Up \\
+      \hline
+      2.24034053e-02 & 2.05161925e-04 & 2.24713243e-04 & 2.15449416e-04 \\ \hline
+      9.50456411e-06 & 4.06757021e-05 & 1.08813765e-05 & 4.65207716e-02 \\ \hline
+      2.25865266e-05 & 1.78173882e-05 & 1.82306304e-05 & 1.63852399e-02 \\ \hline
+      1.78228153e-05 & 6.52572124e-06 & 4.44221807e-06 & 1.76157626e-02 \\ \hline
+      4.32316778e-02 & 2.69057491e-05 & 9.44212465e-05 & 3.66241274e-05 \\ \hline
+      0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 \\ \hline
+      2.71115287e-08 & 8.88247889e-09 & 5.20025762e-02 & 2.37693514e-08 \\ \hline
+      0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 \\ \hline
+      8.80245540e-05 & 6.97456017e-05 & 5.46894576e-05 & 4.40332313e-02 \\ \hline
+      3.06572962e-05 & 7.03347894e-02 & 2.23675336e-05 & 1.03796446e-05 \\ \hline
+      5.17980659e-02 & 1.69806541e-06 & 3.65062105e-06 & 4.20391920e-06 \\ \hline
+      0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 \\ \hline
+      0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 \\ \hline
+      3.69007597e-03 & 8.46520530e-04 & 2.50595263e-01 & 5.88882913e-03 \\ \hline
+      1.65424746e-02 & 9.35429600e-01 & 1.87956221e-02 & 1.74856936e-02 \\ \hline
+      0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 & 0.00000000e+00 \\ \hline
+    \end{tabular}
+    \caption{The direction and their respective rewards.}
+    \label{table:2}
+  \end{center}
+\end{table}
+
+\subsection*{2) \textbf{ Exercise 2: Cooperative Multi-Agent Deep Reinforcement Learning}}
+deded
+
+\subsection*{3) \textbf{ Exercise 3: Competitive Multi-Agent Deep Reinforcement Learning}}
+dedededed
+
+\end{document}  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
