@@ -90,17 +90,57 @@ They are corresponding to the best action as evaluated by the algorithm. \textit
 \end{table}
 
 \subsection*{2) \textbf{ Exercise 2: Cooperative Multi-Agent Deep Reinforcement Learning}}
-\textit{How do the agents perform after training? What do you think are the major
- challenges for learning in this environment, and how is it different from the Frozen Lake 
- environment? For this cooperative environment it would have been possible to use a single
- agent to control all three blue objects, or alternatively strictly decentralized learning
- using standard single-agent reinforcement learning algorithms. What is (in general)
- problematic with such approaches?}
+\textit{Select and investigate the impact of two learning parameters (lr, gamma,
+ batch-size, num-units). Here batch-size and num-units affect the training and structure
+ of the neural network policy. Run as many experiments as possible in parallel to save time.
+ Plot the training progress, which is stored in the learning curves directory. How do the
+ agents perform after training? What do you think are the major challenges for learning in
+ this environment, and how is it different from the Frozen Lake environment? For this
+ cooperative environment it would have been possible to use a single agent to control
+ all three blue objects, or alternatively strictly decentralized learning using standard
+ single-agent reinforcement learning algorithms. What is (in general) problematic 
+ with such approaches?} \medskip
+
+The \underline{learning rate} parameter defines how big the current training will have 
+ impact on the next episode. For example, a low \textit{lr} will not change the result
+ too much from every episode while a big one will impact it more drastically. \\
+The \underline{gamma} quantifies the importance given for future rewards. The bigger it
+ is the bigger the future rewards will have impact.\\
+The \underline{batch-size} is the number of sample trained at the same time before
+ calculating the reward. The bigger it is the faster the training will be, however the
+ learning will be slower. \\
+The \underline{num-units} is the number of units in the multilayer perceptron (i.e.
+ neurons). Basically, the more units there are, the better the learning will be,
+ the computation will also get bigger and therefore more time consuming. \medskip
+
+After a successful training the agents perform much better since they have been well
+ rewarded for doing what is expected of them, i.e. go to the landmarks without,
+ if possible colliding with other agents.\medskip
+
+Comparing to the Frozen Lake environment, the main difficulties is not that much to 
+ make the agents go to landmarks but rather the whole \textit{multi-agent} perspective
+ with avoiding collisions as much as possible. While in the Frozen Lake environment it
+ was really about reaching the goal by dealing only with the environment. So in the first
+ exercise, it was all about maximizing one agent utility while in the second one, it is
+ more about maximizing the utility of the whole set of agents. \medskip
+
+The usual problem of using a single agent or a strictly decentralized learning is that
+ it is generally harder to make a good reward function. Also, the learning process will
+ usually perform poorer than with multiple agents.
+
 
 \subsection*{3) \textbf{ Exercise 3: Competitive Multi-Agent Deep Reinforcement Learning}}
 \textit{How well do the agents perform? Are they equally good? Can you see any 
 reason/explanation why they would not be? How do you think the length of episodes and
- size of the hockey rink would affect learning for your choice of reward system?}
+ size of the hockey rink would affect learning for your choice of reward system?} \medskip
+
+After the whole training, the agents perform very well, although we can see that the
+ agents are not equally good. One explanation of this phenomenon can be that they don't
+ learn the same thing at the same time since they do different actions. Therefore, it
+ is only logical that they do not perform exactly the same. The length of episodes and
+ size of hockey could improve the training but it would take much longer to have a good
+ learning. So at the end it is a question of balance between the time and computation
+ power you want to invest and the perfomance you want to have. 
 
 \end{document}  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
